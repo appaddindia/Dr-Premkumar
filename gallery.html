@@ -133,6 +133,63 @@
         font-weight: 600;
       }
     </style>
+
+    <style>
+      /* Gallery Image */
+      .gallery-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-img:hover {
+        transform: scale(1.03);
+      }
+
+      /* Lightbox */
+      .lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.9);
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+      }
+
+      .lightbox img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+
+      .lightbox .close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 35px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      /* 📱 Mobile view */
+      @media (max-width: 576px) {
+        .gallery-img {
+          height: auto;
+        }
+
+        .lightbox .close {
+          font-size: 30px;
+          top: 10px;
+          right: 15px;
+        }
+      }
+    </style>
   </head>
 
   <body class="custom-cursor">
@@ -811,6 +868,44 @@
         </div>
       </section>
 
+      <section class="about-one py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="text-uppercase">Gallery</span>
+            <h2>Honored to Moderate Two Sessions at AIE 2025, Ahmedabad</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-4 mb-4">
+              <img
+                src="new-images/WhatsApp Image 2025-12-30 at 12.42.55.jpeg"
+                alt="Urology Procedure"
+                class="gallery-img"
+                onclick="openLightbox(this.src)"
+              />
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+              <img
+                src="new-images/WhatsApp Image 2025-12-30 at 12.40.44.jpeg"
+                alt="Advanced Urology Treatment"
+                class="gallery-img"
+                onclick="openLightbox(this.src)"
+              />
+            </div>
+
+            <div class="col-12 col-sm-4 mb-4">
+              <img
+                src="new-images/WhatsApp Image 2025-12-30 at 12.40.43.jpeg"
+                alt="Minimally Invasive Urology"
+                class="gallery-img"
+                onclick="openLightbox(this.src)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--Contact Info End-->
 
       <!--Site Footer Start-->
@@ -1177,6 +1272,25 @@
         ) + eppathurl
       );
       eptagmanage.send();
+    </script>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" />
+    </div>
+
+    <script>
+      function openLightbox(src) {
+        const lightbox = document.getElementById("lightbox");
+        const img = document.getElementById("lightbox-img");
+        img.src = src;
+        lightbox.style.display = "flex";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
     </script>
   </body>
 </html>
