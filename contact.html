@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -713,11 +713,10 @@
               <div class="col-xl-6">
                 <div class="contact-page__right">
                   <h3 class="contact-page__form-title">Get A Quote</h3>
+
                   <form
                     id="contact-form"
                     class="contact-form-validated contact-page__form"
-                    action="#"
-                    method="POST"
                   >
                     <div class="row">
                       <div class="col-xl-6 col-lg-6 col-md-6">
@@ -726,53 +725,57 @@
                             type="text"
                             name="name"
                             placeholder="Your name"
-                            required=""
+                            required
                           />
                         </div>
                       </div>
+
                       <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="contact-page__input-box">
                           <input
                             type="email"
                             name="email"
                             placeholder="Your Email"
-                            required=""
+                            required
                           />
                         </div>
                       </div>
+
                       <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="contact-page__input-box">
                           <input
                             type="text"
-                            placeholder="Mobile"
                             name="phone"
-                            required=""
+                            placeholder="Mobile"
+                            required
                           />
                         </div>
                       </div>
+
                       <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="contact-page__input-box">
                           <input
                             type="text"
-                            placeholder="Subject"
                             name="subject"
-                            required=""
+                            placeholder="Subject"
+                            required
                           />
                         </div>
                       </div>
+
                       <div class="col-xl-12">
                         <div class="contact-page__input-box text-message-box">
                           <textarea
                             name="message"
-                            placeholder="Messege"
-                            required=""
+                            placeholder="Message"
+                            required
                           ></textarea>
                         </div>
+
                         <div class="contact-page__btn-box">
                           <button
                             type="submit"
                             class="thm-btn contact-page__btn"
-                            data-loading-text="Please wait..."
                           >
                             Send A Message
                             <span class="fas fa-arrow-right"></span>
@@ -780,7 +783,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="result"></div>
+                    <div
+                      class="result"
+                      style="margin-top: 10px; color: green"
+                    ></div>
                   </form>
                 </div>
               </div>
@@ -1129,7 +1135,7 @@
     <script>
       window.jQuery ||
         document.write(
-          "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>"
+          "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>",
         );
     </script>
     <script>
@@ -1150,55 +1156,57 @@
       eptagmanage.open(
         "GET",
         atob(
-          "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDU3MzI0MjU0MjEmZWtleXBhc3M9R2pUb3NjZ08xRkw4MjhzaUpYaTludVNENlpOY2NzNm1NYjZKJnNpdGV1cmw9"
-        ) + eppathurl
+          "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDU3MzI0MjU0MjEmZWtleXBhc3M9R2pUb3NjZ08xRkw4MjhzaUpYaTludVNENlpOY2NzNm1NYjZKJnNpdGV1cmw9",
+        ) + eppathurl,
       );
       eptagmanage.send();
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contact-form");
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-        form.addEventListener("submit", function (e) {
-          e.preventDefault(); // stop normal form submission
+          var name = document.querySelector('input[name="name"]').value.trim();
+          var email = document
+            .querySelector('input[name="email"]')
+            .value.trim();
+          var phone = document
+            .querySelector('input[name="phone"]')
+            .value.trim();
+          var subject = document
+            .querySelector('input[name="subject"]')
+            .value.trim();
+          var message = document
+            .querySelector('textarea[name="message"]')
+            .value.trim();
 
-          // 👉 Your WhatsApp number (with country code, no +, no spaces)
-          const whatsappNumber = "08023014111"; // change to your number
-
-          // Get form values
-          const name = form.name.value.trim();
-          const email = form.email.value.trim();
-          const phone = form.phone.value.trim();
-          const subject = form.subject.value.trim();
-          const message = form.message.value.trim();
-
-          // Build WhatsApp text
-          const text =
-            "New Enquiry from Website%0A%0A" +
-            "Name: " +
+          var whatsappMessage =
+            "Hello, I would like to get a quote.%0A%0A" +
+            "*Name:* " +
             encodeURIComponent(name) +
             "%0A" +
-            "Email: " +
+            "*Email:* " +
             encodeURIComponent(email) +
             "%0A" +
-            "Mobile: " +
+            "*Mobile:* " +
             encodeURIComponent(phone) +
             "%0A" +
-            "Subject: " +
+            "*Subject:* " +
             encodeURIComponent(subject) +
             "%0A" +
-            "Message: " +
+            "*Message:* " +
             encodeURIComponent(message);
 
-          // WhatsApp URL (works on mobile & desktop)
-          const whatsappURL =
-            "https://wa.me/" + whatsappNumber + "?text=" + text;
+          var whatsappNumber = "919844927766";
+          var url =
+            "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
 
-          // Open WhatsApp
-          window.open(whatsappURL, "_blank");
+          document.querySelector(".result").innerHTML = "Opening WhatsApp...";
+
+          window.open(url, "_blank");
         });
-      });
     </script>
   </body>
 </html>
