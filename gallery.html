@@ -32,7 +32,7 @@
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta
       name="description"
-      content="  Best Urologist in Nagarbhavi, Best Urologist in Vijayanagar, Best Urologist in Magadi main road, Best Urologist in Mysore Road, Best Urologist in Rajaji Nagar, Best Urologist in Rajarajeshwari Nagar "
+      content="Consult the Best Urologist in Nagarbhavi, Vijayanagar, Magadi Main Road, Mysore Road, Rajaji Nagar & Rajarajeshwari Nagar for advanced urology treatment."
     />
 
     <!-- fonts -->
@@ -102,6 +102,53 @@
       .video-gallery__single {
         text-align: center;
         margin-bottom: 30px;
+      }
+
+      .procedure-videos {
+        padding: 0 0 100px;
+      }
+
+      .procedure-videos__grid {
+        row-gap: 30px;
+      }
+
+      .procedure-videos__item {
+        height: 100%;
+      }
+
+      .procedure-videos__card {
+        height: 100%;
+        padding: 14px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 14px 40px rgba(15, 23, 42, 0.1);
+      }
+
+      .procedure-videos__frame {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        border-radius: 14px;
+        background: #000;
+      }
+
+      .procedure-videos__frame iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 767px) {
+        .procedure-videos {
+          padding-bottom: 70px;
+        }
+
+        .procedure-videos__card {
+          padding: 10px;
+        }
       }
 
       .video-gallery__thumb {
@@ -795,134 +842,147 @@
         </div>
       </section> -->
 
-      <section class="about-one">
-        <div
-          class="outer-wrap3 space-top"
-          style="padding: top padding bottom 100px"
-        >
+      <section class="about-one procedure-videos">
+        <div class="outer-wrap3 space-top">
           <!-- <div class="shape-mockup jump d-none d-xl-block" data-top="2%" data-right="4%"><img src="assets/img/hero/hero-leaf-5.png" alt="shape"></div> -->
           <div class="container">
             <div
               class="section-title text-center sec-title-animation animation-style1"
             >
               <div class="section-title__tagline-box">
-                <span class="section-title__tagline">Videos</span>
+                <span class="section-title__tagline" style="margin-top: 30px"
+                  >Videos</span
+                >
               </div>
               <h2 class="section-title__title title-animation">
                 Urological <span>Procedures</span>
               </h2>
             </div>
 
-            <div class="row mt-5">
-              <div class="col-sm-4">
-                <div class="mega-hover" style="margin-bottom: 30px">
-                  <iframe
-                    width="100%"
-                    height="300"
-                    src="https://www.youtube.com/embed/02UNWFbsje0?si=sq0xB7_aty4umS56"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+            <div class="row mt-5 procedure-videos__grid">
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/02UNWFbsje0?si=sq0xB7_aty4umS56"
+                      title="Urological procedure video 1"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 mb-30">
-                <div class="mega-hover" style="margin-bottom: 30px">
-                  <iframe
-                    width="100%"
-                    height="300"
-                    src="https://www.youtube.com/embed/vpRwq2R7q9Y?si=Kg009Cd7v4a5VjVg"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/vpRwq2R7q9Y?si=Kg009Cd7v4a5VjVg"
+                      title="Urological procedure video 2"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 mb-30">
-                <div class="mega-hover" style="margin-bottom: 30px">
-                  <iframe
-                    width="100%"
-                    height="300"
-                    src="https://www.youtube.com/embed/zZlkb2fonEM?si=q_q0MTo3MxBb4Y6j"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/zZlkb2fonEM?si=q_q0MTo3MxBb4Y6j"
+                      title="Urological procedure video 3"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 mb-30 padding-top">
-                <div class="mega-hover" style="margin-bottom: 30px">
-                  <iframe
-                    width="100%"
-                    height="300px
-                    "
-                    src="https://www.youtube.com/embed/eT5R-h9ovlY?si=KPSSsY8OurgPgvLB"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/eT5R-h9ovlY?si=KPSSsY8OurgPgvLB"
+                      title="Urological procedure video 4"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 mb-30 padding-top">
-                <div class="mega-hover" style="margin-bottom: 30px">
-                  <iframe
-                    width="100%"
-                    height="300"
-                    src="https://www.youtube.com/embed/dxmUgnMZRCA?si=JlmArvJSQSbXg0ep"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/dxmUgnMZRCA?si=JlmArvJSQSbXg0ep"
+                      title="Urological procedure video 5"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 procedure-videos__item">
+                <div class="procedure-videos__card">
+                  <div class="procedure-videos__frame">
+                    <iframe
+                      src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F966868219100810%2F&show_text=false&width=560&t=0"
+                      title="Urological procedure video 6"
+                      style="border: none; overflow: hidden"
+                      scrolling="no"
+                      allow="
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
