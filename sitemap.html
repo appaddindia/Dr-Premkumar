@@ -11,7 +11,7 @@
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta
       name="description"
-      content="Browse sitemap pages for Banashankari and Rajarajeshwari Nagar on Dr Premkumar Urology Health."
+      content="Browse sitemap pages for Banashankari, Rajarajeshwari Nagar, Rajaji Nagar, Mysore Road, Magadi Main Road, Vijayanagar, and Nagarbhavi on Dr Premkumar Urology Health."
     />
 
     <link
@@ -89,7 +89,6 @@
       }
 
       .sitemap-card {
-        flex: 1 1 0;
         min-width: 0;
         padding: 36px 32px;
         border-radius: 24px;
@@ -99,7 +98,8 @@
       }
 
       .sitemap-grid {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 32px;
         align-items: flex-start;
       }
@@ -108,6 +108,15 @@
         margin: 0 0 18px;
         color: #1f2b6c;
         font-size: 30px;
+      }
+
+      .sitemap-card__meta {
+        margin: -8px 0 20px;
+        font-weight: 700;
+      }
+
+      .sitemap-card__meta a {
+        color: #00b8ff;
       }
 
       .sitemap-list {
@@ -134,7 +143,7 @@
         }
 
         .sitemap-grid {
-          flex-direction: column;
+          grid-template-columns: 1fr;
         }
 
         .sitemap-card {
@@ -228,26 +237,64 @@
                           >Urological Conditions</a
                         >
                         <ul class="submenu">
-                          <li><a href="kidney-stones.html">Kidney stones</a></li>
-                          <li><a href="prostate-enlargement.html">Prostate Enlargement</a></li>
+                          <li>
+                            <a href="kidney-stones.html">Kidney stones</a>
+                          </li>
+                          <li>
+                            <a href="prostate-enlargement.html"
+                              >Prostate Enlargement</a
+                            >
+                          </li>
                           <li><a href="prostatitis.html">Prostatitis</a></li>
-                          <li><a href="uti-infection.html">UTI Infection</a></li>
-                          <li><a href="stricture-urethra.html">Stricture Urethra</a></li>
+                          <li>
+                            <a href="uti-infection.html">UTI Infection</a>
+                          </li>
+                          <li>
+                            <a href="stricture-urethra.html"
+                              >Stricture Urethra</a
+                            >
+                          </li>
                           <li><a href="urethritis.html">Urethritis</a></li>
-                          <li><a href="over-active-bladder.html">Over active bladder</a></li>
-                          <li><a href="ruptured-urethra.html">Ruptured Urethra</a></li>
-                          <li><a href="kidney-renal-transplantation.html">Kidney/Renal Transplantation</a></li>
+                          <li>
+                            <a href="over-active-bladder.html"
+                              >Over active bladder</a
+                            >
+                          </li>
+                          <li>
+                            <a href="ruptured-urethra.html">Ruptured Urethra</a>
+                          </li>
+                          <li>
+                            <a href="kidney-renal-transplantation.html"
+                              >Kidney/Renal Transplantation</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="uro-oncology.html">Uro-Oncology</a>
                         <ul class="submenu">
-                          <li><a href="cancer-of-kidney.html">Cancer of kidney</a></li>
-                          <li><a href="bladder-cancer.html">Bladder Cancer</a></li>
-                          <li><a href="testicular-cancer.html">Testicular Cancer</a></li>
-                          <li><a href="cancer-of-the-penis.html">Cancer of the Penis</a></li>
-                          <li><a href="prostate-cancer.html">Prostate cancer</a></li>
-                          <li><a href="adrenal-tumors.html">Adrenal Tumors</a></li>
+                          <li>
+                            <a href="cancer-of-kidney.html">Cancer of kidney</a>
+                          </li>
+                          <li>
+                            <a href="bladder-cancer.html">Bladder Cancer</a>
+                          </li>
+                          <li>
+                            <a href="testicular-cancer.html"
+                              >Testicular Cancer</a
+                            >
+                          </li>
+                          <li>
+                            <a href="cancer-of-the-penis.html"
+                              >Cancer of the Penis</a
+                            >
+                          </li>
+                          <li>
+                            <a href="prostate-cancer.html">Prostate cancer</a>
+                          </li>
+                          <li>
+                            <a href="adrenal-tumors.html">Adrenal Tumors</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="dropdown">
@@ -255,24 +302,62 @@
                         <ul class="submenu">
                           <li><a href="hypogonadism.html">Hypogonadism</a></li>
                           <li><a href="varicocele.html">Varicocele</a></li>
-                          <li><a href="erectile-dysfunction.html">Erectile Dysfunction</a></li>
-                          <li><a href="peyronies-disease.html">Peyronie's Diseases</a></li>
-                          <li><a href="loss-of-libido.html">Loss of Libido</a></li>
+                          <li>
+                            <a href="erectile-dysfunction.html"
+                              >Erectile Dysfunction</a
+                            >
+                          </li>
+                          <li>
+                            <a href="peyronies-disease.html"
+                              >Peyronie's Diseases</a
+                            >
+                          </li>
+                          <li>
+                            <a href="loss-of-libido.html">Loss of Libido</a>
+                          </li>
                           <li><a href="impotency.html">Impotency</a></li>
-                          <li><a href="male-infertility.html">Male Infertility</a></li>
-                          <li><a href="penile-curvature.html">Penile Curvature</a></li>
+                          <li>
+                            <a href="male-infertility.html">Male Infertility</a>
+                          </li>
+                          <li>
+                            <a href="penile-curvature.html">Penile Curvature</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="female-urology.html">Female Urology</a>
                         <ul class="submenu">
-                          <li><a href="recurrent-urinary-tract-infection.html">Recurrent Urinary tract infection</a></li>
-                          <li><a href="urinary-incontinence.html">Urinary Incontinence</a></li>
-                          <li><a href="stress-urinary-incontinence.html">Stress Urinary incontinence</a></li>
-                          <li><a href="voiding-difficulties.html">Voiding difficulties</a></li>
-                          <li><a href="over-active-bladder-female.html">Over active bladder</a></li>
+                          <li>
+                            <a href="recurrent-urinary-tract-infection.html"
+                              >Recurrent Urinary tract infection</a
+                            >
+                          </li>
+                          <li>
+                            <a href="urinary-incontinence.html"
+                              >Urinary Incontinence</a
+                            >
+                          </li>
+                          <li>
+                            <a href="stress-urinary-incontinence.html"
+                              >Stress Urinary incontinence</a
+                            >
+                          </li>
+                          <li>
+                            <a href="voiding-difficulties.html"
+                              >Voiding difficulties</a
+                            >
+                          </li>
+                          <li>
+                            <a href="over-active-bladder-female.html"
+                              >Over active bladder</a
+                            >
+                          </li>
                           <li><a href="cystocele.html">Cystocele</a></li>
-                          <li><a href="pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a></li>
+                          <li>
+                            <a href="pelvic-organ-prolapse.html"
+                              >Pelvic Organ Prolapse</a
+                            >
+                          </li>
                           <li><a href="nocturia.html">Nocturia</a></li>
                         </ul>
                       </li>
@@ -280,22 +365,42 @@
                         <a href="paediatric-urology.html">Paediatric Urology</a>
                         <ul class="submenu">
                           <li><a href="phimosis.html">Phimosis</a></li>
-                          <li><a href="congenital-hernia-hydrocele.html">Congenital Hernia / Hydrocele</a></li>
-                          <li><a href="torsion-testis.html">Torsion testis</a></li>
-                          <li><a href="undescended-testis.html">Undescended testis</a></li>
+                          <li>
+                            <a href="congenital-hernia-hydrocele.html"
+                              >Congenital Hernia / Hydrocele</a
+                            >
+                          </li>
+                          <li>
+                            <a href="torsion-testis.html">Torsion testis</a>
+                          </li>
+                          <li>
+                            <a href="undescended-testis.html"
+                              >Undescended testis</a
+                            >
+                          </li>
                           <li><a href="hypospadias.html">Hypospadias</a></li>
-                          <li><a href="upj-obstruction.html">UPJ Obstruction</a></li>
+                          <li>
+                            <a href="upj-obstruction.html">UPJ Obstruction</a>
+                          </li>
                           <li><a href="pu-valves.html">PU valves</a></li>
                           <li><a href="vu-reflux.html">VU reflux</a></li>
-                          <li><a href="neurogenic-bladder.html">Neurogenic bladder</a></li>
+                          <li>
+                            <a href="neurogenic-bladder.html"
+                              >Neurogenic bladder</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="trauma.html">Trauma</a>
                         <ul class="submenu">
                           <li><a href="renal-trauma.html">Renal Trauma</a></li>
-                          <li><a href="bladder-rupture.html">Bladder Rupture</a></li>
-                          <li><a href="urethral-rupture.html">Urethral Rupture</a></li>
+                          <li>
+                            <a href="bladder-rupture.html">Bladder Rupture</a>
+                          </li>
+                          <li>
+                            <a href="urethral-rupture.html">Urethral Rupture</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="dropdown">
@@ -303,9 +408,21 @@
                           >Latest Treatment Options</a
                         >
                         <ul class="shadow-box">
-                          <li><a href="robotic-radical-prostatectomy.html">Robotic Radical Prostatectomy</a></li>
-                          <li><a href="prostate-laser-surgery.html">Prostate Laser Surgery</a></li>
-                          <li><a href="retrograde-intrarenal-surgery.html">Retrograde Intrarenal Surgery</a></li>
+                          <li>
+                            <a href="robotic-radical-prostatectomy.html"
+                              >Robotic Radical Prostatectomy</a
+                            >
+                          </li>
+                          <li>
+                            <a href="prostate-laser-surgery.html"
+                              >Prostate Laser Surgery</a
+                            >
+                          </li>
+                          <li>
+                            <a href="retrograde-intrarenal-surgery.html"
+                              >Retrograde Intrarenal Surgery</a
+                            >
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -313,8 +430,16 @@
                   <li class="dropdown">
                     <a href="renal-transplant.html">Renal Transplant</a>
                     <ul class="shadow-box">
-                      <li><a href="live-related-donor-transplant.html">Live related donor transplant</a></li>
-                      <li><a href="cadaver-renal-transplant.html">Cadaver Renal Transplant</a></li>
+                      <li>
+                        <a href="live-related-donor-transplant.html"
+                          >Live related donor transplant</a
+                        >
+                      </li>
+                      <li>
+                        <a href="cadaver-renal-transplant.html"
+                          >Cadaver Renal Transplant</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -368,65 +493,1055 @@
             <div class="sitemap-card">
               <h3>Banashankari</h3>
               <ul class="sitemap-list">
-                <li><a href="best-cadaver-renal-transplant-in-banashankari.html">Best Cadaver Renal Transplant in Banashankari</a></li>
-                <li><a href="best-andrologist-in-banashankari.html">Best Andrologist in Banashankari</a></li>
-                <li><a href="best-paediatric-urologist-in-banashankari.html">Best Paediatric Urologist in Banashankari</a></li>
-                <li><a href="best-kidney-transplant-surgeon-in-banashankari.html">Best Kidney Transplant Surgeon in Banashankari</a></li>
-                <li><a href="best-laser-surgery-for-prostate-enlargement-in-banashankari.html">Best Laser Surgery for Prostate Enlargement in Banashankari</a></li>
-                <li><a href="best-renal-transplant-surgeon-in-banashankari.html">Best Renal Transplant Surgeon in Banashankari</a></li>
-                <li><a href="best-robotic-radical-prostatectomy-surgeon-in-banashankari.html">Best Robotic Radical Prostatectomy Surgeon in Banashankari</a></li>
-                <li><a href="best-robotic-urologist-in-banashankari.html">Best Robotic Urologist in Banashankari</a></li>
-                <li><a href="best-urologist-doctor-in-banashankari.html">Best Urologist Doctor in Banashankari</a></li>
-                <li><a href="best-urologist-in-banashankari.html">Best Urologist in Banashankari</a></li>
-                <li><a href="best-uro-oncologist-in-banashankari.html">Best Uro-Oncologist in Banashankari</a></li>
-                <li><a href="bladder-cancer-specialist-doctor-in-banashankari.html">Bladder Cancer Specialist Doctor in Banashankari</a></li>
-                <li><a href="bladder-cancer-treatment-in-banashankari.html">Bladder Cancer Treatment in Banashankari</a></li>
-                <li><a href="kidney-stone-specialist-in-banashankari.html">Kidney Stone Specialist in Banashankari</a></li>
-                <li><a href="kidney-cancer-specialist-doctor-in-banashankari.html">Kidney Cancer Specialist Doctor in Banashankari</a></li>
-                <li><a href="kidney-cancer-treatment-in-banashankari.html">Kidney Cancer Treatment in Banashankari</a></li>
-                <li><a href="male-infertility-specialist-doctor-in-banashankari.html">Male Infertility Specialist Doctor in Banashankari</a></li>
-                <li><a href="kidney-stone-treatment-in-banashankari.html">Kidney Stone Treatment in Banashankari</a></li>
-                <li><a href="kidney-transplant-specialist-doctor-in-banashankari.html">Kidney Transplant Specialist Doctor in Banashankari</a></li>
-                <li><a href="overactive-bladder-treatment-in-banashankari.html">Overactive Bladder Treatment in Banashankari</a></li>
-                <li><a href="prostate-cancer-specialist-doctor-in-banashankari.html">Prostate Cancer Specialist Doctor in Banashankari</a></li>
-                <li><a href="prostate-cancer-treatment-in-banashankari.html">Prostate Cancer Treatment in Banashankari</a></li>
-                <li><a href="prostate-enlargement-treatment-in-banashankari.html">Prostate Enlargement Treatment in Banashankari</a></li>
-                <li><a href="rirs-surgery-specialist-in-banashankari.html">RIRS Surgery Specialist in Banashankari</a></li>
-                <li><a href="uro-cancer-specialist-doctor-in-banashankari.html">Uro Cancer Specialist Doctor in Banashankari</a></li>
-                <li><a href="urethral-stricture-specialist-doctor-in-banashankari.html">Urethral Stricture Specialist Doctor in Banashankari</a></li>
-                <li><a href="urology-specialist-doctor-in-banashankari.html">Urology Specialist Doctor in Banashankari</a></li>
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-banashankari.html"
+                    >Best Cadaver Renal Transplant in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-banashankari.html"
+                    >Best Andrologist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-banashankari.html"
+                    >Best Paediatric Urologist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-banashankari.html"
+                    >Best Kidney Transplant Surgeon in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-banashankari.html"
+                    >Best Laser Surgery for Prostate Enlargement in
+                    Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-banashankari.html"
+                    >Best Renal Transplant Surgeon in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-banashankari.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in
+                    Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-banashankari.html"
+                    >Best Robotic Urologist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-banashankari.html"
+                    >Best Urologist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-banashankari.html"
+                    >Best Urologist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-banashankari.html"
+                    >Best Uro-Oncologist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="bladder-cancer-specialist-doctor-in-banashankari.html"
+                    >Bladder Cancer Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-banashankari.html"
+                    >Bladder Cancer Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-banashankari.html"
+                    >Kidney Stone Specialist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-banashankari.html"
+                    >Kidney Cancer Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-banashankari.html"
+                    >Kidney Cancer Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-banashankari.html"
+                    >Male Infertility Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-banashankari.html"
+                    >Kidney Stone Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-banashankari.html"
+                    >Kidney Transplant Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-banashankari.html"
+                    >Overactive Bladder Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-banashankari.html"
+                    >Prostate Cancer Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-banashankari.html"
+                    >Prostate Cancer Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-banashankari.html"
+                    >Prostate Enlargement Treatment in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-banashankari.html"
+                    >RIRS Surgery Specialist in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-banashankari.html"
+                    >Uro Cancer Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-banashankari.html"
+                    >Urethral Stricture Specialist Doctor in Banashankari</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-banashankari.html"
+                    >Urology Specialist Doctor in Banashankari</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="sitemap-card">
               <h3>Rajarajeshwari Nagar</h3>
               <ul class="sitemap-list">
-                <li><a href="best-cadaver-renal-transplant-in-rajarajeshwari-nagar.html">Best Cadaver Renal Transplant in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-andrologist-in-rajarajeshwari-nagar.html">Best Andrologist in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-paediatric-urologist-in-rajarajeshwari-nagar.html">Best Paediatric Urologist in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-kidney-transplant-surgeon-in-rajarajeshwari-nagar.html">Best Kidney Transplant Surgeon in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-laser-surgery-for-prostate-enlargement-in-rajarajeshwari-nagar.html">Best Laser Surgery for Prostate Enlargement in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-renal-transplant-surgeon-in-rajarajeshwari-nagar.html">Best Renal Transplant Surgeon in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-robotic-radical-prostatectomy-surgeon-in-rajarajeshwari-nagar.html">Best Robotic Radical Prostatectomy Surgeon in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-robotic-urologist-in-rajarajeshwari-nagar.html">Best Robotic Urologist in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-urologist-doctor-in-rajarajeshwari-nagar.html">Best Urologist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-urologist-in-rajarajeshwari-nagar.html">Best Urologist in Rajarajeshwari Nagar</a></li>
-                <li><a href="best-uro-oncologist-in-rajarajeshwari-nagar.html">Best Uro-Oncologist in Rajarajeshwari Nagar</a></li>
-                <li><a href="bladder-cancer-specialist-doctor-in-rajarajeshwari-nagar.html">Bladder Cancer Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="bladder-cancer-treatment-in-rajarajeshwari-nagar.html">Bladder Cancer Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="kidney-stone-specialist-in-rajarajeshwari-nagar.html">Kidney Stone Specialist in Rajarajeshwari Nagar</a></li>
-                <li><a href="kidney-cancer-specialist-doctor-in-rajarajeshwari-nagar.html">Kidney Cancer Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="kidney-cancer-treatment-in-rajarajeshwari-nagar.html">Kidney Cancer Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="male-infertility-specialist-doctor-in-rajarajeshwari-nagar.html">Male Infertility Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="kidney-stone-treatment-in-rajarajeshwari-nagar.html">Kidney Stone Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="kidney-transplant-specialist-doctor-in-rajarajeshwari-nagar.html">Kidney Transplant Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="overactive-bladder-treatment-in-rajarajeshwari-nagar.html">Overactive Bladder Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="prostate-cancer-specialist-doctor-in-rajarajeshwari-nagar.html">Prostate Cancer Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="prostate-cancer-treatment-in-rajarajeshwari-nagar.html">Prostate Cancer Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="prostate-enlargement-treatment-in-rajarajeshwari-nagar.html">Prostate Enlargement Treatment in Rajarajeshwari Nagar</a></li>
-                <li><a href="rirs-surgery-specialist-in-rajarajeshwari-nagar.html">RIRS Surgery Specialist in Rajarajeshwari Nagar</a></li>
-                <li><a href="uro-cancer-specialist-doctor-in-rajarajeshwari-nagar.html">Uro Cancer Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="urethral-stricture-specialist-doctor-in-rajarajeshwari-nagar.html">Urethral Stricture Specialist Doctor in Rajarajeshwari Nagar</a></li>
-                <li><a href="urology-specialist-doctor-in-rajarajeshwari-nagar.html">Urology Specialist Doctor in Rajarajeshwari Nagar</a></li>
+                <li>
+                  <a
+                    href="best-cadaver-renal-transplant-in-rajarajeshwari-nagar.html"
+                    >Best Cadaver Renal Transplant in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-rajarajeshwari-nagar.html"
+                    >Best Andrologist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-paediatric-urologist-in-rajarajeshwari-nagar.html"
+                    >Best Paediatric Urologist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-kidney-transplant-surgeon-in-rajarajeshwari-nagar.html"
+                    >Best Kidney Transplant Surgeon in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-rajarajeshwari-nagar.html"
+                    >Best Laser Surgery for Prostate Enlargement in
+                    Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-renal-transplant-surgeon-in-rajarajeshwari-nagar.html"
+                    >Best Renal Transplant Surgeon in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-rajarajeshwari-nagar.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in
+                    Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-rajarajeshwari-nagar.html"
+                    >Best Robotic Urologist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-rajarajeshwari-nagar.html"
+                    >Best Urologist Doctor in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-rajarajeshwari-nagar.html"
+                    >Best Urologist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-rajarajeshwari-nagar.html"
+                    >Best Uro-Oncologist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="bladder-cancer-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Bladder Cancer Specialist Doctor in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="bladder-cancer-treatment-in-rajarajeshwari-nagar.html"
+                    >Bladder Cancer Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-rajarajeshwari-nagar.html"
+                    >Kidney Stone Specialist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-cancer-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Kidney Cancer Specialist Doctor in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-rajarajeshwari-nagar.html"
+                    >Kidney Cancer Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Male Infertility Specialist Doctor in Rajarajeshwari
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-rajarajeshwari-nagar.html"
+                    >Kidney Stone Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Kidney Transplant Specialist Doctor in Rajarajeshwari
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="overactive-bladder-treatment-in-rajarajeshwari-nagar.html"
+                    >Overactive Bladder Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Prostate Cancer Specialist Doctor in Rajarajeshwari
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-treatment-in-rajarajeshwari-nagar.html"
+                    >Prostate Cancer Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-enlargement-treatment-in-rajarajeshwari-nagar.html"
+                    >Prostate Enlargement Treatment in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-rajarajeshwari-nagar.html"
+                    >RIRS Surgery Specialist in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="uro-cancer-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Uro Cancer Specialist Doctor in Rajarajeshwari Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Urethral Stricture Specialist Doctor in Rajarajeshwari
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urology-specialist-doctor-in-rajarajeshwari-nagar.html"
+                    >Urology Specialist Doctor in Rajarajeshwari Nagar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-card">
+              <h3>Rajaji Nagar</h3>
+              <ul class="sitemap-list">
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-rajaji-nagar.html"
+                    >Best Cadaver Renal Transplant in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-rajaji-nagar.html"
+                    >Best Andrologist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-rajaji-nagar.html"
+                    >Best Paediatric Urologist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-rajaji-nagar.html"
+                    >Best Kidney Transplant Surgeon in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-rajaji-nagar.html"
+                    >Best Laser Surgery for Prostate Enlargement in Rajaji
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-rajaji-nagar.html"
+                    >Best Renal Transplant Surgeon in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-rajaji-nagar.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in Rajaji
+                    Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-rajaji-nagar.html"
+                    >Best Robotic Urologist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-rajaji-nagar.html"
+                    >Best Urologist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-rajaji-nagar.html"
+                    >Best Urologist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-rajaji-nagar.html"
+                    >Best Uro-Oncologist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="bladder-cancer-specialist-doctor-in-rajaji-nagar.html"
+                    >Bladder Cancer Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-rajaji-nagar.html"
+                    >Bladder Cancer Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-rajaji-nagar.html"
+                    >Kidney Stone Specialist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-rajaji-nagar.html"
+                    >Kidney Cancer Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-rajaji-nagar.html"
+                    >Kidney Cancer Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-rajaji-nagar.html"
+                    >Male Infertility Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-rajaji-nagar.html"
+                    >Kidney Stone Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-rajaji-nagar.html"
+                    >Kidney Transplant Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-rajaji-nagar.html"
+                    >Overactive Bladder Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-rajaji-nagar.html"
+                    >Prostate Cancer Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-rajaji-nagar.html"
+                    >Prostate Cancer Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-rajaji-nagar.html"
+                    >Prostate Enlargement Treatment in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-rajaji-nagar.html"
+                    >RIRS Surgery Specialist in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-rajaji-nagar.html"
+                    >Uro Cancer Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-rajaji-nagar.html"
+                    >Urethral Stricture Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-rajaji-nagar.html"
+                    >Urology Specialist Doctor in Rajaji Nagar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-card">
+              <h3>Mysore Road</h3>
+              <ul class="sitemap-list">
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-mysore-road.html"
+                    >Best Cadaver Renal Transplant in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-mysore-road.html"
+                    >Best Andrologist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-mysore-road.html"
+                    >Best Paediatric Urologist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-mysore-road.html"
+                    >Best Kidney Transplant Surgeon in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-mysore-road.html"
+                    >Best Laser Surgery for Prostate Enlargement in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-mysore-road.html"
+                    >Best Renal Transplant Surgeon in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-mysore-road.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-mysore-road.html"
+                    >Best Robotic Urologist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-mysore-road.html"
+                    >Best Urologist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-mysore-road.html"
+                    >Best Urologist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-mysore-road.html"
+                    >Best Uro-Oncologist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-specialist-doctor-in-mysore-road.html"
+                    >Bladder Cancer Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-mysore-road.html"
+                    >Bladder Cancer Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-mysore-road.html"
+                    >Kidney Stone Specialist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-mysore-road.html"
+                    >Kidney Cancer Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-mysore-road.html"
+                    >Kidney Cancer Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-mysore-road.html"
+                    >Male Infertility Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-mysore-road.html"
+                    >Kidney Stone Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-mysore-road.html"
+                    >Kidney Transplant Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-mysore-road.html"
+                    >Overactive Bladder Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-mysore-road.html"
+                    >Prostate Cancer Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-mysore-road.html"
+                    >Prostate Cancer Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-mysore-road.html"
+                    >Prostate Enlargement Treatment in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-mysore-road.html"
+                    >RIRS Surgery Specialist in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-mysore-road.html"
+                    >Uro Cancer Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-mysore-road.html"
+                    >Urethral Stricture Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-mysore-road.html"
+                    >Urology Specialist Doctor in Mysore Road</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-card">
+              <h3>Magadi Main Road</h3>
+              <ul class="sitemap-list">
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-magadi-main-road.html"
+                    >Best Cadaver Renal Transplant in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-magadi-main-road.html"
+                    >Best Andrologist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-magadi-main-road.html"
+                    >Best Paediatric Urologist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-magadi-main-road.html"
+                    >Best Kidney Transplant Surgeon in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-magadi-main-road.html"
+                    >Best Laser Surgery for Prostate Enlargement in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-magadi-main-road.html"
+                    >Best Renal Transplant Surgeon in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-magadi-main-road.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-magadi-main-road.html"
+                    >Best Robotic Urologist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-magadi-main-road.html"
+                    >Best Urologist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-magadi-main-road.html"
+                    >Best Urologist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-magadi-main-road.html"
+                    >Best Uro-Oncologist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-specialist-doctor-in-magadi-main-road.html"
+                    >Bladder Cancer Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-magadi-main-road.html"
+                    >Bladder Cancer Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-magadi-main-road.html"
+                    >Kidney Stone Specialist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-magadi-main-road.html"
+                    >Kidney Cancer Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-magadi-main-road.html"
+                    >Kidney Cancer Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-magadi-main-road.html"
+                    >Male Infertility Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-magadi-main-road.html"
+                    >Kidney Stone Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-magadi-main-road.html"
+                    >Kidney Transplant Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-magadi-main-road.html"
+                    >Overactive Bladder Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-magadi-main-road.html"
+                    >Prostate Cancer Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-magadi-main-road.html"
+                    >Prostate Cancer Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-magadi-main-road.html"
+                    >Prostate Enlargement Treatment in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-magadi-main-road.html"
+                    >RIRS Surgery Specialist in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-magadi-main-road.html"
+                    >Uro Cancer Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-magadi-main-road.html"
+                    >Urethral Stricture Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-magadi-main-road.html"
+                    >Urology Specialist Doctor in Magadi Main Road</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-card">
+              <h3>Vijayanagar</h3>
+              <ul class="sitemap-list">
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-vijayanagar.html"
+                    >Best Cadaver Renal Transplant in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-vijayanagar.html"
+                    >Best Andrologist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-vijayanagar.html"
+                    >Best Paediatric Urologist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-vijayanagar.html"
+                    >Best Kidney Transplant Surgeon in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-vijayanagar.html"
+                    >Best Laser Surgery for Prostate Enlargement in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-vijayanagar.html"
+                    >Best Renal Transplant Surgeon in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-vijayanagar.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-vijayanagar.html"
+                    >Best Robotic Urologist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-vijayanagar.html"
+                    >Best Urologist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-vijayanagar.html"
+                    >Best Urologist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-vijayanagar.html"
+                    >Best Uro-Oncologist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-specialist-doctor-in-vijayanagar.html"
+                    >Bladder Cancer Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-vijayanagar.html"
+                    >Bladder Cancer Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-vijayanagar.html"
+                    >Kidney Stone Specialist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-vijayanagar.html"
+                    >Kidney Cancer Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-vijayanagar.html"
+                    >Kidney Cancer Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-vijayanagar.html"
+                    >Male Infertility Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-vijayanagar.html"
+                    >Kidney Stone Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-vijayanagar.html"
+                    >Kidney Transplant Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-vijayanagar.html"
+                    >Overactive Bladder Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-vijayanagar.html"
+                    >Prostate Cancer Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-vijayanagar.html"
+                    >Prostate Cancer Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-vijayanagar.html"
+                    >Prostate Enlargement Treatment in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-vijayanagar.html"
+                    >RIRS Surgery Specialist in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-vijayanagar.html"
+                    >Uro Cancer Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-vijayanagar.html"
+                    >Urethral Stricture Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-vijayanagar.html"
+                    >Urology Specialist Doctor in Vijayanagar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-card">
+              <h3>Nagarbhavi</h3>
+              <ul class="sitemap-list">
+                <li>
+                  <a href="best-cadaver-renal-transplant-in-nagarbhavi.html"
+                    >Best Cadaver Renal Transplant in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-andrologist-in-nagarbhavi.html"
+                    >Best Andrologist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-paediatric-urologist-in-nagarbhavi.html"
+                    >Best Paediatric Urologist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-kidney-transplant-surgeon-in-nagarbhavi.html"
+                    >Best Kidney Transplant Surgeon in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-laser-surgery-for-prostate-enlargement-in-nagarbhavi.html"
+                    >Best Laser Surgery for Prostate Enlargement in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-renal-transplant-surgeon-in-nagarbhavi.html"
+                    >Best Renal Transplant Surgeon in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="best-robotic-radical-prostatectomy-surgeon-in-nagarbhavi.html"
+                    >Best Robotic Radical Prostatectomy Surgeon in Mysore
+                    Road</a
+                  >
+                </li>
+                <li>
+                  <a href="best-robotic-urologist-in-nagarbhavi.html"
+                    >Best Robotic Urologist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-doctor-in-nagarbhavi.html"
+                    >Best Urologist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-urologist-in-nagarbhavi.html"
+                    >Best Urologist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="best-uro-oncologist-in-nagarbhavi.html"
+                    >Best Uro-Oncologist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-specialist-doctor-in-nagarbhavi.html"
+                    >Bladder Cancer Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="bladder-cancer-treatment-in-nagarbhavi.html"
+                    >Bladder Cancer Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-specialist-in-nagarbhavi.html"
+                    >Kidney Stone Specialist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-specialist-doctor-in-nagarbhavi.html"
+                    >Kidney Cancer Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-cancer-treatment-in-nagarbhavi.html"
+                    >Kidney Cancer Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="male-infertility-specialist-doctor-in-nagarbhavi.html"
+                    >Male Infertility Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="kidney-stone-treatment-in-nagarbhavi.html"
+                    >Kidney Stone Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="kidney-transplant-specialist-doctor-in-nagarbhavi.html"
+                    >Kidney Transplant Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="overactive-bladder-treatment-in-nagarbhavi.html"
+                    >Overactive Bladder Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prostate-cancer-specialist-doctor-in-nagarbhavi.html"
+                    >Prostate Cancer Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-cancer-treatment-in-nagarbhavi.html"
+                    >Prostate Cancer Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="prostate-enlargement-treatment-in-nagarbhavi.html"
+                    >Prostate Enlargement Treatment in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="rirs-surgery-specialist-in-nagarbhavi.html"
+                    >RIRS Surgery Specialist in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="uro-cancer-specialist-doctor-in-nagarbhavi.html"
+                    >Uro Cancer Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="urethral-stricture-specialist-doctor-in-nagarbhavi.html"
+                    >Urethral Stricture Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
+                <li>
+                  <a href="urology-specialist-doctor-in-nagarbhavi.html"
+                    >Urology Specialist Doctor in Nagarbhavi</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -442,11 +1557,18 @@
           <div class="container">
             <div class="site-footer__top-inner">
               <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div
+                  class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                  data-wow-delay="100ms"
+                >
                   <div class="footer-widget__about">
                     <div class="footer-widget__about-logo">
-                      <a href="index.html"><img src="new-images/prem kumar logo1 (1).png" style="width: 100%"
-                          alt="" /></a>
+                      <a href="index.html"
+                        ><img
+                          src="new-images/prem kumar logo1 (1).png"
+                          style="width: 100%"
+                          alt=""
+                      /></a>
                     </div>
                     <p class="footer-widget__about-text">
                       With over 20 years of surgical experience, Dr Prem Kumar K
@@ -456,19 +1578,26 @@
                     </p>
                     <div class="footer-widget__social">
                       <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="https://www.facebook.com/share/r/18UEdot8Fj/"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.facebook.com/share/r/18UEdot8Fj/"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
                       <a href="#"><i class="fab fa-pinterest-p"></i></a>
                       <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div
+                  class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
+                  data-wow-delay="200ms"
+                >
                   <div class="footer-widget__links">
                     <h4 class="footer-widget__title">Quick links</h4>
                     <ul class="footer-widget__links-list list-unstyled">
                       <li><a href="dr-premkumar.html">About</a></li>
                       <li>
-                        <a href="conditions-and-treatments.html">Conditions & Treatments</a>
+                        <a href="conditions-and-treatments.html"
+                          >Conditions & Treatments</a
+                        >
                       </li>
                       <li><a href="testimonials.html">Testimonials</a></li>
                       <li><a href="#">Blogs</a></li>
@@ -477,15 +1606,22 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                  data-wow-delay="400ms"
+                >
                   <div class="footer-widget__services">
                     <h4 class="footer-widget__title">Services</h4>
                     <ul class="footer-widget__links-list list-unstyled">
                       <li>
-                        <a href="conditions-and-treatments.html">Conditions & Treatments</a>
+                        <a href="conditions-and-treatments.html"
+                          >Conditions & Treatments</a
+                        >
                       </li>
                       <li>
-                        <a href="latest-treatment-options.html">Latest Treatment Options</a>
+                        <a href="latest-treatment-options.html"
+                          >Latest Treatment Options</a
+                        >
                       </li>
                       <li>
                         <a href="male-urology.html">Male Urology</a>
@@ -502,7 +1638,10 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                  data-wow-delay="300ms"
+                >
                   <div class="footer-widget__contact">
                     <h3 class="footer-widget__title">Contact Us</h3>
                     <ul class="footer-widget__contact-list list-unstyled">
@@ -511,9 +1650,13 @@
                           <span class="icon-pin"></span>
                         </div>
                         <p>
-                          <a href="https://maps.app.goo.gl/thpwu5n5Hp1q5Ga49" target="_blank">
+                          <a
+                            href="https://maps.app.goo.gl/thpwu5n5Hp1q5Ga49"
+                            target="_blank"
+                          >
                             Fortis Hospital, Nagarbhavi - Best Hospital in
-                            Bangalore</a>
+                            Bangalore</a
+                          >
                         </p>
                       </li>
                       <li>
@@ -527,7 +1670,9 @@
                           <span class="icon-email"></span>
                         </div>
                         <p>
-                          <a href="mailto:drpremkumark@gmail.com">drpremkumark@gmail.com</a>
+                          <a href="mailto:drpremkumark@gmail.com"
+                            >drpremkumark@gmail.com</a
+                          >
                         </p>
                       </li>
                     </ul>
@@ -547,7 +1692,9 @@
                       © 2025
                       <a href="#">Premkumak K</a>
                       All Rights Reserved. Designed by
-                      <a href="https://appaddindia.com/">Appadd India Pvt. Ltd.</a>
+                      <a href="https://appaddindia.com/"
+                        >Appadd India Pvt. Ltd.</a
+                      >
                     </p>
                   </div>
                   <div class="site-footer__bottom-menu-box">
